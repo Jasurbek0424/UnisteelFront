@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'LibreFranklin-Regular';
+    src: url('./fonts/LibreFranklin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreFranklin-Bold';
+    src: url('./fonts/LibreFranklin-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreFranklin-ExtraBold';
+    src: url('./fonts/LibreFranklin-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heebo-Regular';
+    src: url('./fonts/Heebo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: url('./fonts/Heebo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+.carousel__item {
+    display: flex !important;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+@media (max-width:420px) {
+    .multiCarousel {
+        max-width: 300px !important;
+    }
+}
