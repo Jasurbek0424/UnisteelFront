@@ -30,6 +30,7 @@ const NavBar: React.FC = () => {
 
     const handleClick = () => {
         setShowNavList(false)
+        document.body.style.overflow = 'auto';
     }
     const toggleNavList = () => {
         setShowNavList(!showNavList);
