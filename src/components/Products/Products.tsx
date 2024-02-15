@@ -52,16 +52,15 @@ const Products: React.FC<Props> = ({ products }) => {
         <div>
             <div className='mb-5 flex flex-wrap'>
                 {Array.isArray(products) && products.map(product => (
-                    <button
-                        key={product.id}
-                        onClick={() => handleClick(product)}
-                        className={`text-lg md:text-xl md:py-2 px-4 border font-libre400 font-semibold border-black
-                ${activeProductId === product.id ? 'bg-primary text-white'
-                                : 'bg-transparent'}`}
-                    >
-                        {product.title}
-                    </button>
-                ))}
+    <button
+        key={product.id}
+        onClick={() => handleClick(product)}
+        className={`text-lg md:text-xl md:py-2 px-4 border font-libre400 font-semibold border-black
+            ${activeProductId === product.id ? 'bg-primary text-white' : 'bg-transparent'}`}
+    >
+        {product.title}
+    </button>
+))}
             </div>
             {selectedProduct && (
                 <div className='flex gap-6 lg:flex-row lg:items-start  flex-col items-center'>
