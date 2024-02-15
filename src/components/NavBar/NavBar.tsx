@@ -118,7 +118,7 @@ const NavBar: React.FC = () => {
                         Металлопрокат и металлоконструкции
                     </h3>
 
-                    <a href="http://127.0.0.1:8000/media/rekvizit/rekviziti.xlsx"
+                    <a href="http://api.toounisteel.kz/media/rekvizit/rekviziti.xlsx"
                         className='flex items-center gap-2 justify-center'>
                         <FaRegFilePdf className='text-red-500' />
                         Реквизиты
