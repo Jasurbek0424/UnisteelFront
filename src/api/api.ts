@@ -35,7 +35,7 @@ export interface ServisesProps {
 
 export async function fetchProducts() {
     try {
-        const response = await axios.get(`${VITE_API_URL}/Products`);
+        const response = await axios.get(`${VITE_API_URL}/Products/`);
         return response.data;
     } catch (error) {
         console.error('Произошла ошибка:', error);
