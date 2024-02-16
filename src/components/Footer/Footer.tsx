@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className='mt-5'>
                     <p className='text-gray-400 text-center'>
-                        Copyright © 2023 Unisteel | Powered by IPROD.KZ
+                        Copyright © 2024 Unisteel | Powered by <a href="https://iprod.kz/">IPROD.KZ</a>
                     </p>
                 </div>
             </div>
