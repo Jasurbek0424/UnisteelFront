@@ -73,7 +73,7 @@ const Products: React.FC<Props> = ({ products }) => {
                     </div>
                     <div className='flex flex-col gap-4 max-w-[700px] w-full'>
                         <h3 className='font-libre700 font-bold text-xl md:text-2xl text-primary'>
-                            {selectedProduct.title}({selectedProduct.gost})
+                            {selectedProduct.title} {selectedProduct.gost && `(${selectedProduct.gost})`}
                         </h3>
                         <table>
                             <tbody>
