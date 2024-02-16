@@ -78,8 +78,8 @@ const Servises: React.FC = () => {
                 </div>
                 <div className="flex w-full justify-center lg:justify-end flex-wrap gap-5">
                     {servises?.map(service => (
-                        <div key={service.id} className="max-w-[350px] sm:max-w-[260px] md:max-w-[260px] xl:max-w-[350px] pb-4 bg-white border">
-                            <img src={service.image} alt={service.title} />
+                        <div key={service.id} className="overflow-hidden max-w-[350px] sm:max-w-[260px] md:max-w-[260px] xl:max-w-[350px] pb-4 bg-white border">
+                            <img src={service.image} alt={service.title} className="hover:scale-110 transition-all duration-700"/>
                             <div className="text-center px-2 h-[165px] flex flex-col justify-between gap-3 mt-4">
                                 <h3 className="font-libre700 font-bold text-lg xl:text-2xl tracking-tight text-secondary">{service.title}</h3>
                                 <p className="font-heebo400 text-sm line-clamp-2 xl:line-clamp-3">{service.content}</p>
