@@ -7,6 +7,7 @@ const Undefined = () => {
                 <div className="container flex flex-col justify-center items-center h-full">
                     <h1 className=" text-center font-libre800 font-extrabold text-xl sm:text-2xl lg:text-4xl
                 mb-5 -space-x-0.5">
+                        404 <br />
                         Упс.. <br />
                         Страница не найдена :(
                     </h1>
