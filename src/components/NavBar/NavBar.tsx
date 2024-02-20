@@ -142,14 +142,14 @@ const NavBar: React.FC = () => {
                         </a>
                         </li>
                         <li>
-                            <a href={`tel:${information?.number1}`}
+                            <a href={`tel:${information?.number2}`}
                                 className='flex items-center gap-1'>
                                 <FaPhoneAlt className='text-sm' />
                                 {information?.number2}
                             </a>
                         </li>
                         <li>
-                            <a href={`tel:${information?.number1}`}
+                            <a href={`tel:${information?.number3}`}
                                 className='flex items-center gap-1'>
                                 <FaPhoneAlt className='text-sm' />
                                 {information?.number3}
