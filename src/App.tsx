@@ -20,6 +20,7 @@ function App() {
               <GlobalMain />
               <Footer />
             </>} />
+          <Route path="/robots.txt" element={<Robots />} />
           <Route path="*" element={<Undefined />} />
         </Routes>
       </>
