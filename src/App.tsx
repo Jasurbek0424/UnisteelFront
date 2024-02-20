@@ -3,6 +3,7 @@ import Hero from './components/Hero/Hero';
 import GlobalMain from './components/GlobalMain/GlobalMain';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
+import Robots from './Robots';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Undefined from './components/UndefinedPage/Undefined';
