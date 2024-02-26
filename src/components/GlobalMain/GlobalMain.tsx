@@ -10,6 +10,7 @@ import Partner from '../Partner';
 import MultiCarousel from '../MultiCarousel';
 import Help from '../Help';
 import ScrollToTop from '../ScrollToTop';
+import Whatsapp from '../Whatsapp';
 
 
 
@@ -33,6 +34,7 @@ const GlobalMain: React.FC = () => {
     return (
         <main>
             <ScrollToTop />
+            <Whatsapp />
             <section className='container flex md:flex-row flex-col gap-6 py-10 items-center px-4'>
                 <div>
                     <h2 className='text-secondary font-libre700 font-bold text-2xl lg:text-4xl -space-x-0.5 mb-4'>
