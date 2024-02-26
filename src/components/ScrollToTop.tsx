@@ -32,7 +32,7 @@ const ScrollToTop: React.FC = () => {
     return (
         <div className='relative flex flex-col max-w-[150px] w-full'>
             {showButtonPhone && (
-                <a href='https://wa.me/+77007192085' className=" sm:hidden
+                <a href='tel:+77007192085' className=" sm:hidden
                 scroll-to-top 2xl:text-5xl xl:text-4xl lg:text-3xl
                 md:text-2xl sm:text-xl text-xl shadow-emerald-50 shadow
                fixed bottom-16 right-5 p-2 bg-green-600 text-white cursor-pointer rounded-full animate-bounce z-30"
