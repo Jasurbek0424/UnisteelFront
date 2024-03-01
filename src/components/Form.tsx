@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { sendFormData } from '../api/api';
+import { sendEmail } from '../api/email';
 
 interface FormValues {
     full_name: string;
@@ -43,8 +44,13 @@ const FormComponent: React.FC<FormProps> = ({ onSubmitSuccess }) => {
         formDataToSend.append('contact', formData.contact);
         formDataToSend.append('comment', formData.comment);
 
-        const success = await sendFormData(formDataToSend);
-        if (success) {
+        // Отправка данных на бэкэнд
+        const backendSuccess = await sendFormData(formDataToSend);
+
+        // Отправка данных на почту
+        const emailSuccess = await sendEmail(formData);
+
+        if (backendSuccess && emailSuccess) {
             setFormData({
                 full_name: '',
                 contact: '',
