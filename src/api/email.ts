@@ -14,9 +14,9 @@ export async function sendEmail(formData: FormValues): Promise<boolean> {
             comment: formData.comment
         };
 
-        const serviceId: string = 'service_hwek14e'; // Замените на ваш Service ID
-        const templateId: string = 'template_hbk0n7c'; // Замените на ID вашего шаблона
-        const userId: string = '7rd1SD2rJaQPJ1BTU'; // Замените на ваш User ID
+        const serviceId: string = 'service_u559z1o'; // Замените на ваш Service ID
+        const templateId: string = 'template_sw5gkh5'; // Замените на ID вашего шаблона
+        const userId: string = 'Mk30CILdKGZvvp45O'; // Замените на ваш User ID
 
         const response: EmailJSResponseStatus = await emailjs.send(serviceId, templateId, templateParams, userId);
         if (response.status === 200) {
